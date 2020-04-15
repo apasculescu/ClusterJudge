@@ -1,5 +1,5 @@
 download_Yeast_GO_mapping <-
-function(yeast.GO.url='http://downloads.yeastgenome.org/curation/literature/gene_association.sgd.gz'){
+function(yeast.GO.url='http://downloads.yeastgenome.org/curation/literature/gene_association.sgd.gaf.gz'){
   ##### download Yeast Gene Ontology mapping  http://downloads.yeastgenome.org/curation/literature/gene_association.sgd.gz
   GO.assocs.all  <- read.table(textConnection(readLines(gzcon(url(yeast.GO.url))))
                          ,header=FALSE,check.names=FALSE, stringsAsFactors=FALSE, sep="\t", quote=NULL, comment.char ='!'
